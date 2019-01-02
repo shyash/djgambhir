@@ -42,6 +42,9 @@ body {               width:   100%;
       margin:15px;
    	}
  @media only screen and (max-width: 720px) {
+  #contact div{margin-left: auto;margin-right: auto;}
+
+
   #about{align-items: center;text-align-last: center;} 
  #about>div:nth-of-type(1){padding-top: 80px;}
  #about>div:nth-of-type(2){padding-top: 15px;text-align:center}
@@ -51,10 +54,12 @@ body {               width:   100%;
    #achieve p:nth-of-type(2){top:60%;border:0px solid red;}
  #achievements{align-items: center;text-align-last: center;}
  .pic2{margin-top: 20px;}
-footer{ align-items:center;}
+footer{ align-iteams:center;}
 .navlinks{display: none;}
     }
  @media only screen and (min-width: 720px) {	
+  form{margin-right: 100px;}
+ 
  	#about{-webkit-box-flex:   1; display:flex;justify-content:center;align-items:center;}
   #about>div:nth-of-type(1){padding-top: 80px;margin-right:150px;}
      #about div div p{font-size: 22px;}
@@ -78,3 +83,49 @@ i{margin-left: 10px;font-size: 40px; color:#1dbbf1 ; }
  ul li p{padding-left: 15px;padding-top: 3px; }
  .navlinks a li {cursor: pointer;}
  .navlinks a{text-decoration: none; color: white}
+ 
+ form{
+  display: flex;
+  flex-direction: column;
+ }
+
+  #formContainer{
+  display: flex; justify-content: space-between;  flex-wrap: wrap;
+ }
+input{margin-top: 15px;}
+textarea{margin-top: 15px;}
+input[name="name"]{
+  padding: 5px; 
+  height: 30px;
+ width:250px;
+  border-radius: 5px;
+  border-style: none;
+  background: transparent;
+  color:#1dbbf1;
+  border: 1px solid #1dbbf1; }
+
+input[name="email"]{
+  padding: 5px; 
+  height: 30px;
+ width:250px;
+  border-radius: 5px;
+  border-style: none;
+  background: transparent;
+  color:#1dbbf1;
+  border: 1px solid #1dbbf1;  }
+  textarea{
+  padding: 5px; 
+  height: 90px;
+ width:250px;
+  border-radius: 5px;
+  border-style: none;
+  background: transparent;
+  color:#1dbbf1;
+  border: 1px solid #1dbbf1;  }
+  button{
+    font-size: 18px;
+     height:30px;
+    background: #42cfff;
+    margin-top: 15px;
+     border: 1px solid #1dbbf1; 
+  }
